@@ -5,7 +5,7 @@ export let loader: LoaderFunction = async ({ request }) => {
   // console.log({ request });
 
   return authenticator.authenticate("auth0", request, {
-    successRedirect: "/dashboard",
+    successRedirect: "/",
     failureRedirect: "/login",
   });
 };
